@@ -12,3 +12,6 @@ sudo yum clean all
 echo -e "\033[31mRebuild yum cache\033[0m"
 sudo yum makecache
 
+#when I push this the first repo to github, I got the issue as below:
+#Peer reports incompatible or unsupported protocol version.
+#yum update -y nss curl libcurl solved my problem, and some guys say that yum update -y also can solve this issue.
